@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FlashLight</string>
+
+
+    <string name="setting_about">SETTING</string>
+    <string name="setting_open_light">Turn on the LED when start</string>
+
+
+    <string name="about_other">OTHER</string>
+    <string name="setting_rate">Rate this app</string>
+    <string name="setting_share">Share to friends</string>
+    <string name="setting_mail">Feedback</string>
+    <string name="setting_about_us">About us</string>
+    <string name="setting_share_content">Does not contain advertisements, most practical flashlight software. Download:</string>
+    <string name="more_share_soft">No app available to share</string>
+    <string name="more_share">More share</string>
+    <string name="feedback_title">Flashlight Feedback</string>
+    <string name="about_version">Version %s</string>
+    <string name="about_title">About</string>
+    <string name="setting_update">Check for update</string>
+    <string name="update_result">This is the latest version</string>
+    <string name="notification_text">Tap to turn off LED</string>
+
+</resources>
