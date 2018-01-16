@@ -153,7 +153,7 @@ public class Practice extends AppCompatActivity {
 
             @Override
             public void onCompletion(MediaPlayer mp) {
-                // TODO Auto-generated method stub
+                
                 mp.release();
             }
         });
@@ -167,7 +167,7 @@ public class Practice extends AppCompatActivity {
 
             @Override
             public void onCompletion(MediaPlayer mp) {
-                // TODO Auto-generated method stub
+
                 mp.release();
             }
         });
