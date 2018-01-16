@@ -153,7 +153,7 @@ public class Practice extends AppCompatActivity {
 
             @Override
             public void onCompletion(MediaPlayer mp) {
-                
+
                 mp.release();
             }
         });
