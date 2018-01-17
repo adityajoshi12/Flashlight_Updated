@@ -25,11 +25,11 @@ import android.widget.Toast;
 public class Practice extends AppCompatActivity {
     ImageButton button;
           FloatingActionButton setting;
-    private CameraManager mCameraManager;
-    private String mCameraId;
-    private boolean isFlashOn;
-    private boolean hasFlash;
-    MediaPlayer mp;
+    public CameraManager mCameraManager;
+    public String mCameraId;
+    public static boolean isFlashOn;
+    public boolean hasFlash;
+  public   MediaPlayer mp;
 
 
     @Override
@@ -110,15 +110,19 @@ public class Practice extends AppCompatActivity {
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isFlashOn) {
+                if (isFlashOn)
+                {
+                    isFlashOn=true;
                     turnOnFlashLight();
-                    startActivity(new Intent(Practice.this, SettingActivity.class));
-
                 }
+                else
+                    isFlashOn=false;
+                startActivity(new Intent(Practice.this, SettingActivity.class));
+
             }
         });
     }
-    public void turnOnFlashLight() {
+    public  void turnOnFlashLight() {
 
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static apps.aditya.flashlight.Practice.isFlashOn;
 
 
 public class SettingActivity extends Activity implements View.OnClickListener{
@@ -33,7 +34,11 @@ public class SettingActivity extends Activity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
-
+if (isFlashOn)
+{
+    isFlashOn=true;
+    new Practice().turnOnFlashLight();
+}
         mBackContainer = (LinearLayout) findViewById(R.id.setting_back);
         mOpenLightContainer = (LinearLayout) findViewById(R.id.setting_light_on_open_container);
         mOpenLightBox = (CheckBox) findViewById(R.id.setting_light_box);
