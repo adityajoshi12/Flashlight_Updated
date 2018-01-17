@@ -1,4 +1,4 @@
-# Torch
+# FlashLight
 
 This is a simple yet powerful flashlight application
 
